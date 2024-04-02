@@ -1,0 +1,43 @@
+api_alias,name,api_endpoint,api_auth,api_method,api_source,api_desc,api_sub_type,api_query_example_desc,api_query_example,api_source_url
+COVID19事件列表,COVID_EventList,https://XXXX?sld-apikey=XXX&sld-cmd=COVID_EventList,api key,GET,unknown,获取COVID19事件列表,COVID19,获取COVID19事件列表,https://XXXX?sld-apikey=XXX&sld-cmd=COVID_EventList,
+COVID19事件列表详情及相关推文,COVID_Detail,https://XXXX?XXXXX&XXX=COVID_Detail,api key,GET,unknown,获取COVID19事件列表详情及相关推文,COVID19,,,
+COVID19详情相关推文评论列表,COVID19CommentList,https://XXXX?sld-apikey=XXX&sld-cmd=COVID19CommentList,api key,GET,unknown,获取COVID19详情相关推文评论列表,COVID19,,,
+新闻事件列表,newsList,https://XXXX?sld-apikey=XXXXX&sld-cmd=newsList,api key,GET,unknown,获取新闻事件列表,News,,,
+我和好友共同关注的列表,followersYouKnowList,https://XXXXX?sld-apikey=XXXXX&sld-cmd=followersYouKnowList,api key,GET,unknown,获取我和好友共同关注的列表,Social,,,
+转发列表,retweetList,https://XXXX?sld-apikey=XXXXX&sld-cmd=retweetList,api key,GET,unknown,获取指定推文的转发列表,Twitter,获取指定推文的转发列表,curl -L -X GET --compressed 'https://XXXX?sld-apikey=XXXXX&sld-cmd=retweetList&id=123456',
+引用列表,quoteList,https://XXXXX?sld-apikey=XXXXX&sld-cmd=quoteList,api key,GET,unknown,获取指定推文的引用列表,Twitter,获取指定推文的引用列表,curl -L -X GET --compressed 'https://XXXXX?sld-apikey=XXXXX&sld-cmd=quoteList&id=123456',
+高级搜索热门推文评论列表,searchTopCommentList,https://XXXX?sld-apikey=XXXXX&sld-cmd=searchTopCommentList,api key,GET,unknown,获取高级搜索热门推文的评论列表,Twitter,获取指定热门推文的评论列表,curl -L -X GET --compressed 'https://XXXX?sld-apikey=XXXXX&sld-cmd=searchTopCommentList&id=123456',
+高级搜索热门列表,searchTopList,https://XXXXX,api key,POST,unknown,获取高级搜索的热门推文列表,Twitter,"搜索包含""hello""的热门推文",curl -L -X POST --compressed 'https://XXXXX' -d 'sld-apikey=XXXXX&sld-cmd=searchTopList&allWords=hello',
+趋势列表,trendingList,https://XXXX?sld-apikey=XXXX&sld-cmd=trendingList,api key,GET,unknown,获取Twitter趋势列表,Twitter,获取Twitter趋势列表,curl -L -X GET --compressed 'https://XXXX?sld-apikey=XXXX&sld-cmd=trendingList',
+实时天气,CurrentWeather,https://api.qweather.com/v7/weather/now,api key,GET,QWeather,获取中国3000+市县区和海外20万个城市实时天气数据，包括实时温度、体感温度、风力风向、相对湿度、大气压强、降水量、能见度、露点温度、云量等。,CityWeather,查询北京市实况天气,curl -L -X GET --compressed 'https://api.qweather.com/v7/weather/now?location=101010100&key=YOUR_KEY',
+每日天气预报,DailyWeatherForecast,https://api.qweather.com/v7/weather/3d?{查询参数},api key,GET,QWeather,每日天气预报API，提供全球城市未来3-30天天气预报，包括：日出日落、月升月落、最高最低温度、天气白天和夜间状况、风力、风速、风向、相对湿度、大气压强、降水量、露点温度、紫外线强度、能见度等。,CityWeather,,,
+逐小时天气预报,HourlyWeatherForecast,https://api.qweather.com/v7/weather/24h?{查询参数},api key,GET,QWeather,逐小时天气预报API，提供全球城市未来24-168小时逐小时天气预报，包括：温度、天气状况、风力、风速、风向、相对湿度、大气压强、降水概率、露点温度、云量。,CityWeather,,,
+分钟级降水,MinuteByMinutePrecipitation,https://api.qweather.com/v7/minutely/5m?{查询参数},api key,GET,QWeather,分钟级降水API（临近预报）支持中国1公里精度的未来2小时每5分钟降雨预报数据。,MinuteWeather,,,
+天气灾害预警,WeatherDisasterWarning,https://api.qweather.com/v7/warning/now?{查询参数},api key,GET,QWeather,天气灾害预警API可以获取中国及全球多个国家或地区官方发布的实时天气灾害预警数据。,Forecast,,,
+天气预警城市列表,WeatherWarningCityList,https://api.qweather.com/v7/warning/list?{查询参数},api key,GET,QWeather,获取指定国家或地区当前正在发生天气灾害预警的城市列表，根据这些城市列表再查询对应城市的天气灾害预警。,Forecast,,,
+天气指数预报,WeatherIndexForecast1D,https://api.qweather.com/v7/indices/1d?{查询参数},api key,GET,Qweather,获取中国和全球城市天气的一天的生活指数预报数据。中国天气生活指数：舒适度指数、洗车指数、穿衣指数、感冒指数、运动指数、旅游指数、紫外线指数、空气污染扩散条件指数、空调开启指数、过敏指数、太阳镜指数、化妆指数、晾晒指数、交通指数、钓鱼指数、防晒指数；海外天气生活指数：运动指数、洗车指数、紫外线指数、钓鱼指数,WeatherIndex,,,
+天气指数预报,WeatherIndexForecast3D,https://api.qweather.com/v7/indices/3d?{查询参数},api key,GET,QWeather,获取中国和全球城市天气的三天的生活指数预报数据。中国天气生活指数：舒适度指数、洗车指数、穿衣指数、感冒指数、运动指数、旅游指数、紫外线指数、空气污染扩散条件指数、空调开启指数、过敏指数、太阳镜指数、化妆指数、晾晒指数、交通指数、钓鱼指数、防晒指数；海外天气生活指数：运动指数、洗车指数、紫外线指数、钓鱼指数,WeatherIndex,,,
+实时空气质量,CurrentAirQualityIndex,https://api.qweather.com/v7/air/now?{查询参数},api key,GET,Qweather,实时空气质量API，支持中国3000+市县区以及1700+国控站点实时空气质量的查询，包括AQI数值、空气质量等级、首要污染物、PM10、PM2.5、臭氧、二氧化氮、二氧化硫、一氧化碳数值。, AirQuality,,,
+空气质量每日预报,DailyAirQualityForecast,https://api.qweather.com/v7/air/5d?{查询参数},api key,GET,QWeather,空气质量每日预报API，支持全国3000+市县区空气质量预报数据的查询，包括AQI预报、首要污染物预报、空气质量等级预报。,AirQuality,,,
+历史天气查询,WeatherHistory,https://api.qweather.com/v7/historical/weather?{查询参数},api key,GET,QWeather,可以获取最近10天的历史天气和空气质量数据。,TimeMachine,,,
+太阳辐射逐小时预报24小时,HourlySolarRadiationForecast24H,https://api.qweather.com/v7/solar-radiation/24h?{查询参数},api key,GET,QWeather,获取最近24小时的太阳辐射，太阳辐射API支持获取全球任意坐标的辐射数据，包括净太阳辐射，太阳散射辐射和太阳直接辐射。,SolarRadiation,,,
+太阳辐射逐小时预报72小时,HourlySolarRadiationForecast72H,https://api.qweather.com/v7/solar-radiation/72h?{查询参数},api key,GET,QWeather,获取最近72小时的太阳辐射，太阳辐射API支持获取全球任意坐标的辐射数据，包括净太阳辐射，太阳散射辐射和太阳直接辐射。,SolarRadiation,,,
+城市搜索,CityLookup,https://geoapi.qweather.com/v2/city/lookup?{查询参数},api key,GET,QWeather,城市搜索API提供全球地理位位置、全球城市搜索服务，支持经纬度坐标反查、多语言、模糊搜索等功能。搜索结果包括经纬度、省份地区、locationID等信息。,GeoAPI,用关键字beij进行模糊查询,curl -L -X GET --compressed 'https://geoapi.qweather.com/v2/city/lookup?location=beij&key=YOUR_KEY',
+热门城市查询,TopCityLookup,https://geoapi.qweather.com/v2/city/top?{查询参数},api key,GET,QWeather,获取全球各国热门城市列表，搜索结果包括经纬度、省份地区、locationID等信息。,GeoAPI,查询中国热门城市前5位,curl -L -X GET --compressed 'https://geoapi.qweather.com/v2/city/lookup?location=beij&key=YOUR_KEY',
+POI搜索,POISearch,https://geoapi.qweather.com/v2/poi/lookup?{查询参数},api key,GET,QWeather,使用关键字和坐标查询POI信息（景点、火车站、飞机场、港口等）。,GeoAPI,搜索关键字jings,curl -L -X GET --compressed 'https://geoapi.qweather.com/v2/poi/lookup?type=scenic&location=jings&key=YOUR_KEY',
+POI范围搜索,POIAreaSearch ,https://geoapi.qweather.com/v2/poi/range?{查询参数},api key,GET,QWeather,提供指定区域范围内查询所有POI信息。,GeoAPI,北京市中心附近10公里景点,"curl -L -X GET --compressed 'https://geoapi.qweather.com/v2/poi/range?location=116.40528,39.90498&type=scenic&radius=10&key=YOUR_KEY'",
+日出日落,SunriseSunset,https://api.qweather.com/v7/astronomy/sun?{查询参数},api key,GET,QWeather,获取未来60天全球任意地点日出日落时间。,Astronomy,,,
+获取当前城市,CurrentCity,,,GET,,获取当前ip对应的城市,,,,
+获取汇率,GetExchangeRates,https://booking-com15.p.rapidapi.com/api/v1/meta/getExchangeRates,,GET,booking.com,根据基础货币，提供一个货币汇率的列表,Meta,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+地点经纬度搜索,LocationtoLatLon,https://booking-com15.p.rapidapi.com/api/v1/meta/locationToLatLong,,GET,booking.com,根据地点名称，获取经纬度,Meta,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+搜索酒店,SearchHotels,https://booking-com15.p.rapidapi.com/api/v1/hotels/searchHotels,,GET,booking.com,根据地点搜索对应地点的酒店,Hotels,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+获取酒店的详细信息,GetHotelDetails,https://booking-com15.p.rapidapi.com/api/v1/hotels/getHotelDetails,,GET,booking.com,获取酒店的详细信息,Hotels,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+获取酒店空房的信息,GetHotelRoomAvailability,https://booking-com15.p.rapidapi.com/api/v1/hotels/getAvailability,,GET,booking.com,获取酒店在未来日子的空房信息,Hotels,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+获取酒店的描述信息,GetHotelDescriptionAndInfo,https://booking-com15.p.rapidapi.com/api/v1/hotels/getDescriptionAndInfo,,GET,booking.com,获取酒店的描述信息,Hotels,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+获取酒店的评分,GetHotelReviewScores,https://booking-com15.p.rapidapi.com/api/v1/hotels/getHotelReviewScores,,GET,booking.com,获取酒店的评分信息,Hotels,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+搜索航班信息,SearchFlights,https://booking-com15.p.rapidapi.com/api/v1/flights/searchFlights,,GET,booking.com,获取对应时间和机场的航班信息,Flights,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+搜索最低价的航班信息,GetMinFlightPrice,https://booking-com15.p.rapidapi.com/api/v1/flights/getMinPrice,,GET,booking.com,获取某段时间内最低的航班价格,Flights,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+搜索某地点的旅行景点,SearchAttractions,https://booking-com15.p.rapidapi.com/api/v1/attraction/searchAttractions,,GET,booking.com,搜索某地点的旅行景点,Attraction,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+搜索某旅行景点的详细信息,GetAttractionDetails,https://booking-com15.p.rapidapi.com/api/v1/attraction/getAttractionDetails,,GET,booking.com,搜索某旅行景点的详细信息,Attraction,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+搜索航班地点的locationID,SearchFlightDestination,https://booking-com15.p.rapidapi.com/api/v1/flights/searchDestination,,GET,booking.com,搜索某个地点的locationID，用于航班查询,Flights,,,https://rapidapi.com/DataCrawler/api/booking-com15/
+搜索酒店地点的locationID,SearchHotelDestination,https://booking-com15.p.rapidapi.com/api/v1/hotels/searchDestination,,GET,booking.com,搜索某个地点的locationID，用于酒店查询,Hotels,,,https://rapidapi.com/DataCrawler/api/booking-com15/

@@ -1,0 +1,926 @@
+[
+    {
+        "api_alias": "COVID19事件列表",
+        "name": "COVID_EventList",
+        "api_endpoint": "https://XXXX?sld-apikey=XXX&sld-cmd=COVID_EventList",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "unknown",
+        "api_desc": "获取COVID19事件列表",
+        "api_sub_type": "COVID19",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            }
+        ],
+        "api_query_example_desc": "获取COVID19事件列表",
+        "api_query_example": "https://XXXX?sld-apikey=XXX&sld-cmd=COVID_EventList"
+    },
+    {
+        "api_alias": "COVID19事件列表详情及相关推文",
+        "name": "COVID_Detail",
+        "api_endpoint": "https://XXXX?XXXXX&XXX=COVID_Detail",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "unknown",
+        "api_desc": "获取COVID19事件列表详情及相关推文",
+        "api_sub_type": "COVID19",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "id",
+                "param_desc": "从COVID19事件列表接口获取的id参数",
+                "param_type": "string",
+                "param_required": "true"
+            }
+        ],
+        "api_query_example_desc": "",
+        "api_query_example": ""
+    },
+    {
+        "api_alias": "COVID19详情相关推文评论列表",
+        "name": "COVID19CommentList",
+        "api_endpoint": "https://XXXX?sld-apikey=XXX&sld-cmd=COVID19CommentList",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "unknown",
+        "api_desc": "获取COVID19详情相关推文评论列表",
+        "api_sub_type": "COVID19",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "id",
+                "param_desc": "从COVID19事件列表详情及相关推文接口获取的infoList列表的id参数",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "cursor_bottom",
+                "param_desc": "分页参数，由接口返回，当接口返回的该参数不为空时，表示可能有下一页",
+                "param_type": "string",
+                "param_required": "false"
+            }
+        ],
+        "api_query_example_desc": "",
+        "api_query_example": ""
+    },
+    {
+        "api_alias": "新闻事件列表",
+        "name": "newsList",
+        "api_endpoint": "https://XXXX?sld-apikey=XXXXX&sld-cmd=newsList",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "unknown",
+        "api_desc": "获取新闻事件列表",
+        "api_sub_type": "News",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            }
+        ],
+        "api_query_example_desc": "",
+        "api_query_example": ""
+    },
+    {
+        "api_alias": "我和好友共同关注的列表",
+        "name": "followersYouKnowList",
+        "api_endpoint": "https://XXXXX?sld-apikey=XXXXX&sld-cmd=followersYouKnowList",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "unknown",
+        "api_desc": "获取我和好友共同关注的列表",
+        "api_sub_type": "Social",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "userId",
+                "param_desc": "好友用户id，从获取我关注的列表接口获取的userId参数",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "cursor_bottom",
+                "param_desc": "分页参数，由接口返回，当接口返回的该参数不为空时，表示可能有下一页",
+                "param_type": "string",
+                "param_required": "false"
+            }
+        ],
+        "api_query_example_desc": "",
+        "api_query_example": ""
+    },
+    {
+        "api_alias": "转发列表",
+        "name": "retweetList",
+        "api_endpoint": "https://XXXX?sld-apikey=XXXXX&sld-cmd=retweetList",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "unknown",
+        "api_desc": "获取指定推文的转发列表",
+        "api_sub_type": "Twitter",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "id",
+                "param_desc": "推文id，从关注的好友信息及相关推文接口获取的infoList列表中的id参数",
+                "param_type": "string",
+                "param_required": "true"
+            }
+        ],
+        "api_query_example_desc": "获取指定推文的转发列表",
+        "api_query_example": "curl -L -X GET --compressed 'https://XXXX?sld-apikey=XXXXX&sld-cmd=retweetList&id=123456'"
+    },
+    {
+        "api_alias": "引用列表",
+        "name": "quoteList",
+        "api_endpoint": "https://XXXXX?sld-apikey=XXXXX&sld-cmd=quoteList",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "unknown",
+        "api_desc": "获取指定推文的引用列表",
+        "api_sub_type": "Twitter",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "id",
+                "param_desc": "推文id，从关注的好友信息及相关推文接口获取的infoList列表中的id参数",
+                "param_type": "string",
+                "param_required": "true"
+            }
+        ],
+        "api_query_example_desc": "获取指定推文的引用列表",
+        "api_query_example": "curl -L -X GET --compressed 'https://XXXXX?sld-apikey=XXXXX&sld-cmd=quoteList&id=123456'"
+    },
+    {
+        "api_alias": "高级搜索热门推文评论列表",
+        "name": "searchTopCommentList",
+        "api_endpoint": "https://XXXX?sld-apikey=XXXXX&sld-cmd=searchTopCommentList",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "unknown",
+        "api_desc": "获取高级搜索热门推文的评论列表",
+        "api_sub_type": "Twitter",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "id",
+                "param_desc": "从高级搜索热门列表接口获取的infoList列表的id参数",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "cursor_bottom",
+                "param_desc": "分页参数，由接口返回，当接口返回的该参数不为空时，表示可能有下一页",
+                "param_type": "string",
+                "param_required": "false"
+            }
+        ],
+        "api_query_example_desc": "获取指定热门推文的评论列表",
+        "api_query_example": "curl -L -X GET --compressed 'https://XXXX?sld-apikey=XXXXX&sld-cmd=searchTopCommentList&id=123456'"
+    },
+    {
+        "api_alias": "高级搜索热门列表",
+        "name": "searchTopList",
+        "api_endpoint": "https://XXXXX",
+        "api_auth": "api key",
+        "api_method": "POST",
+        "api_source": "unknown",
+        "api_desc": "获取高级搜索的热门推文列表",
+        "api_sub_type": "Twitter",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "allWords",
+                "param_desc": "搜索词（都包含），allWords、exactWord、 anyWords三者必须有一个不为空，即当exactWord、 anyWords两个参数为空时，该参数不能为空",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "exactWords",
+                "param_desc": "搜索词（精确），allWords、exactWord、 anyWords三者必须有一个不为空，即当allWords、 anyWords两个参数为空时，该参数不能为空",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "anyWords",
+                "param_desc": "搜索词（任何一词），allWords、exactWord、 anyWords三者必须有一个不为空，即当allWords、 exactWord两个参数为空时，该参数不能为空",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "noneWords",
+                "param_desc": "搜索词（排除词）",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "tags",
+                "param_desc": "标签",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "language",
+                "param_desc": "语言，（ar：阿拉伯，bn：孟加拉语，eu：巴斯克，bg：保加利亚语，ca：加泰罗尼亚语，hr：克罗地亚语，cs：捷克语，da：丹麦文，nl：荷兰语，en：英语，fi：芬兰，fr：法文，de：德语，el：希腊语，gu：古吉拉特语，he：希伯来语，hi：印地语，hu：匈牙利，id：印度尼西亚语，it：意大利文，ja：日本语，kn：坎纳达语，ko：韩语，mr：马拉地语，no：挪威语，fa：波斯语，pl：波兰语，pt：葡萄牙语，ro：罗马尼亚语，ru：俄语，sr：塞尔维亚语，zh-cn：简体中文，sk：斯洛伐克文，es：西班牙文，sv：瑞典语，ta：泰米尔语，th：泰国语，zh-tw：繁体中文，tr：土耳其语，uk：乌克兰语，ur：乌尔都语，vi：越南文）例：ar(代表阿拉伯语)，不填默认任何语言",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "fromAccounts",
+                "param_desc": "账号（来自）",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "toAccounts",
+                "param_desc": "账号（发给）",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "mentionAccounts",
+                "param_desc": "账号（提及）",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "replies",
+                "param_desc": "过滤条件（回复），（0：包括回复和原始推文，1：仅显示回复，2：关闭回复过滤条件）",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "links",
+                "param_desc": "过滤条件（链接），（0：在推文中包含链接，1：仅带有链接的推文，2：关闭链接过滤条件）",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "minReplies",
+                "param_desc": "互动量（最少回复次数）",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "minFaves",
+                "param_desc": "互动量（最少喜欢次数）",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "minRetweets",
+                "param_desc": "互动量（最少转推次数）",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "sinceDate",
+                "param_desc": "开始日期",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "untilDate",
+                "param_desc": "结束日期",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "cursor_bottom",
+                "param_desc": "分页参数，由接口返回，当接口返回的该参数不为空时，表示可能有下一页",
+                "param_type": "string",
+                "param_required": "false"
+            }
+        ],
+        "api_query_example_desc": "搜索包含\"hello\"的热门推文",
+        "api_query_example": "curl -L -X POST --compressed 'https://XXXXX' -d 'sld-apikey=XXXXX&sld-cmd=searchTopList&allWords=hello'"
+    },
+    {
+        "api_alias": "趋势列表",
+        "name": "trendingList",
+        "api_endpoint": "https://XXXX?sld-apikey=XXXX&sld-cmd=trendingList",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "unknown",
+        "api_desc": "获取Twitter趋势列表",
+        "api_sub_type": "Twitter",
+        "api_params": [
+            {
+                "param_name": "sld-apikey",
+                "param_desc": "用于区分用户",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "sld-cmd",
+                "param_desc": "用于区分API",
+                "param_type": "string",
+                "param_required": "true"
+            }
+        ],
+        "api_query_example_desc": "获取Twitter趋势列表",
+        "api_query_example": "curl -L -X GET --compressed 'https://XXXX?sld-apikey=XXXX&sld-cmd=trendingList'"
+    },
+    {
+        "api_alias": "实时天气",
+        "name": "CurrentWeather",
+        "api_endpoint": "https://api.qweather.com/v7/weather/now",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "获取中国3000+市县区和海外20万个城市实时天气数据，包括实时温度、体感温度、风力风向、相对湿度、大气压强、降水量、能见度、露点温度、云量等。",
+        "api_sub_type": "CityWeather",
+        "api_params": [
+            {
+                "param_name": "key",
+                "param_desc": "用户认证key。",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "location",
+                "param_desc": "需要查询地区的名称，支持文字、以英文逗号分隔的经度,纬度坐标（十进制，最多支持小数点后两位）、LocationID或Adcode（仅限中国城市）。例如 location=北京 或 location=116.41,39.92",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "lang",
+                "param_desc": "多语言，默认为简体中文",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "unit",
+                "param_desc": "数据单位设置，可选值包括unit=m（公制单位，默认）和unit=i（英制单位）。",
+                "param_type": "string",
+                "param_required": "false"
+            }
+        ],
+        "api_query_example_desc": "查询北京市实况天气",
+        "api_query_example": "curl -L -X GET --compressed 'https://api.qweather.com/v7/weather/now?location=101010100&key=YOUR_KEY'"
+    },
+    {
+        "api_alias": "每日天气预报",
+        "name": "DailyWeatherForecast",
+        "api_endpoint": "https://api.qweather.com/v7/weather/3d?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "每日天气预报API，提供全球城市未来3-30天天气预报，包括：日出日落、月升月落、最高最低温度、天气白天和夜间状况、风力、风速、风向、相对湿度、大气压强、降水量、露点温度、紫外线强度、能见度等。",
+        "api_sub_type": "CityWeather"
+    },
+    {
+        "api_alias": "逐小时天气预报",
+        "name": "HourlyWeatherForecast",
+        "api_endpoint": "https://api.qweather.com/v7/weather/24h?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "逐小时天气预报API，提供全球城市未来24-168小时逐小时天气预报，包括：温度、天气状况、风力、风速、风向、相对湿度、大气压强、降水概率、露点温度、云量。",
+        "api_sub_type": "CityWeather"
+    },
+    {
+        "api_alias": "分钟级降水",
+        "name": "MinuteByMinutePrecipitation",
+        "api_endpoint": "https://api.qweather.com/v7/minutely/5m?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "分钟级降水API（临近预报）支持中国1公里精度的未来2小时每5分钟降雨预报数据。",
+        "api_sub_type": "MinuteWeather"
+    },
+    {
+        "api_alias": "天气灾害预警",
+        "name": "WeatherDisasterWarning",
+        "api_endpoint": "https://api.qweather.com/v7/warning/now?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "天气灾害预警API可以获取中国及全球多个国家或地区官方发布的实时天气灾害预警数据。",
+        "api_sub_type": "Forecast"
+    },
+    {
+        "api_alias": "天气预警城市列表",
+        "name": "WeatherWarningCityList",
+        "api_endpoint": "https://api.qweather.com/v7/warning/list?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "获取指定国家或地区当前正在发生天气灾害预警的城市列表，根据这些城市列表再查询对应城市的天气灾害预警。",
+        "api_sub_type": "Forecast"
+    },
+    {
+        "api_alias": "天气指数预报",
+        "name": "WeatherIndexForecast1D",
+        "api_endpoint": "https://api.qweather.com/v7/indices/1d?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "Qweather",
+        "api_desc": "获取中国和全球城市天气的一天的生活指数预报数据。中国天气生活指数：舒适度指数、洗车指数、穿衣指数、感冒指数、运动指数、旅游指数、紫外线指数、空气污染扩散条件指数、空调开启指数、过敏指数、太阳镜指数、化妆指数、晾晒指数、交通指数、钓鱼指数、防晒指数；海外天气生活指数：运动指数、洗车指数、紫外线指数、钓鱼指数",
+        "api_sub_type": "WeatherIndex"
+    },
+    {
+        "api_alias": "天气指数预报",
+        "name": "WeatherIndexForecast3D",
+        "api_endpoint": "https://api.qweather.com/v7/indices/3d?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "获取中国和全球城市天气的三天的生活指数预报数据。中国天气生活指数：舒适度指数、洗车指数、穿衣指数、感冒指数、运动指数、旅游指数、紫外线指数、空气污染扩散条件指数、空调开启指数、过敏指数、太阳镜指数、化妆指数、晾晒指数、交通指数、钓鱼指数、防晒指数；海外天气生活指数：运动指数、洗车指数、紫外线指数、钓鱼指数",
+        "api_sub_type": "WeatherIndex"
+    },
+    {
+        "api_alias": "实时空气质量",
+        "name": "CurrentAirQualityIndex",
+        "api_endpoint": "https://api.qweather.com/v7/air/now?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "Qweather",
+        "api_desc": "实时空气质量API，支持中国3000+市县区以及1700+国控站点实时空气质量的查询，包括AQI数值、空气质量等级、首要污染物、PM10、PM2.5、臭氧、二氧化氮、二氧化硫、一氧化碳数值。",
+        "api_sub_type": " AirQuality"
+    },
+    {
+        "api_alias": "空气质量每日预报",
+        "name": "DailyAirQualityForecast",
+        "api_endpoint": "https://api.qweather.com/v7/air/5d?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "空气质量每日预报API，支持全国3000+市县区空气质量预报数据的查询，包括AQI预报、首要污染物预报、空气质量等级预报。",
+        "api_sub_type": "AirQuality"
+    },
+    {
+        "api_alias": "历史天气查询",
+        "name": "WeatherHistory",
+        "api_endpoint": "https://api.qweather.com/v7/historical/weather?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "可以获取最近10天的历史天气和空气质量数据。",
+        "api_sub_type": "TimeMachine"
+    },
+    {
+        "api_alias": "太阳辐射逐小时预报24小时",
+        "name": "HourlySolarRadiationForecast24H",
+        "api_endpoint": "https://api.qweather.com/v7/solar-radiation/24h?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "获取最近24小时的太阳辐射，太阳辐射API支持获取全球任意坐标的辐射数据，包括净太阳辐射，太阳散射辐射和太阳直接辐射。",
+        "api_sub_type": "SolarRadiation"
+    },
+    {
+        "api_alias": "太阳辐射逐小时预报72小时",
+        "name": "HourlySolarRadiationForecast72H",
+        "api_endpoint": "https://api.qweather.com/v7/solar-radiation/72h?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "获取最近72小时的太阳辐射，太阳辐射API支持获取全球任意坐标的辐射数据，包括净太阳辐射，太阳散射辐射和太阳直接辐射。",
+        "api_sub_type": "SolarRadiation"
+    },
+    {
+        "api_alias": "城市搜索",
+        "name": "CityLookup",
+        "api_endpoint": "https://geoapi.qweather.com/v2/city/lookup?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "城市搜索API提供全球地理位位置、全球城市搜索服务，支持经纬度坐标反查、多语言、模糊搜索等功能。搜索结果包括经纬度、省份地区、locationID等信息。",
+        "api_sub_type": "GeoAPI",
+        "api_params": [
+            {
+                "param_name": "key",
+                "param_desc": "用户认证key。",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "location",
+                "param_desc": "需要查询地区的名称，支持文字、以英文逗号分隔的经度,纬度坐标（十进制，最多支持小数点后两位）、LocationID或Adcode（仅限中国城市）。例如 location=北京 或 location=116.41,39.92",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "adm",
+                "param_desc": "城市的上级行政区划，可设定只在某个行政区划范围内进行搜索，用于排除重名城市或对结果进行过滤。例如 adm=beijing",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "range",
+                "param_desc": "搜索范围，可设定只在某个国家或地区范围内进行搜索，国家和地区名称需使用ISO 3166 所定义的国家代码。如果不设置此参数，搜索范围将在所有城市。例如 range=cn",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "number",
+                "param_desc": "返回结果的数量，取值范围1-20，默认返回10个结果。",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "lang",
+                "param_desc": "多语言，默认为简体中文",
+                "param_type": "string",
+                "param_required": "false"
+            }
+        ],
+        "api_query_example_desc": "用关键字beij进行模糊查询",
+        "api_query_example": "curl -L -X GET --compressed 'https://geoapi.qweather.com/v2/city/lookup?location=beij&key=YOUR_KEY'"
+    },
+    {
+        "api_alias": "热门城市查询",
+        "name": "TopCityLookup",
+        "api_endpoint": "https://geoapi.qweather.com/v2/city/top?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "获取全球各国热门城市列表，搜索结果包括经纬度、省份地区、locationID等信息。",
+        "api_sub_type": "GeoAPI",
+        "api_params": [
+            {
+                "param_name": "key",
+                "param_desc": "用户认证key。",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "range",
+                "param_desc": "搜索范围，可设定只在某个国家或地区范围内进行搜索，国家和地区名称需使用ISO 3166 所定义的国家代码。如果不设置此参数，搜索范围将在所有城市。例如 range=cn",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "number",
+                "param_desc": "返回结果的数量，取值范围1-20，默认返回10个结果。",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "lang",
+                "param_desc": "多语言，默认为简体中文",
+                "param_type": "string",
+                "param_required": "false"
+            }
+        ],
+        "api_query_example_desc": "查询中国热门城市前5位",
+        "api_query_example": "curl -L -X GET --compressed 'https://geoapi.qweather.com/v2/city/lookup?location=beij&key=YOUR_KEY'"
+    },
+    {
+        "api_alias": "POI搜索",
+        "name": "POISearch",
+        "api_endpoint": "https://geoapi.qweather.com/v2/poi/lookup?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "使用关键字和坐标查询POI信息（景点、火车站、飞机场、港口等）。",
+        "api_sub_type": "GeoAPI",
+        "api_params": [
+            {
+                "param_name": "key",
+                "param_desc": "用户认证key。",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "location",
+                "param_desc": "需要查询地区的名称，支持文字、以英文逗号分隔的经度,纬度坐标（十进制，最多支持小数点后两位）、LocationID或Adcode（仅限中国城市）。例如 location=北京 或 location=116.41,39.92",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "type",
+                "param_desc": "OI类型，可选择搜索某一类型的POI:scenic 景点;CSTA 潮流站点;TSTA 潮汐站点",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "city",
+                "param_desc": "选择POI所在城市，可设定只搜索在特定城市内的POI信息。城市名称可以是文字或城市的LocationID。默认不限制特定城市",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "number",
+                "param_desc": "返回结果的数量，取值范围1-20，默认返回10个结果。",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "lang",
+                "param_desc": "多语言，默认为简体中文zh",
+                "param_type": "string",
+                "param_required": "false"
+            }
+        ],
+        "api_query_example_desc": "搜索关键字jings",
+        "api_query_example": "curl -L -X GET --compressed 'https://geoapi.qweather.com/v2/poi/lookup?type=scenic&location=jings&key=YOUR_KEY'"
+    },
+    {
+        "api_alias": "POI范围搜索",
+        "name": "POIAreaSearch ",
+        "api_endpoint": "https://geoapi.qweather.com/v2/poi/range?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "提供指定区域范围内查询所有POI信息。",
+        "api_sub_type": "GeoAPI",
+        "api_params": [
+            {
+                "param_name": "key",
+                "param_desc": "用户认证key。",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "location",
+                "param_desc": "需要查询地区的名称，支持文字、以英文逗号分隔的经度,纬度坐标（十进制，最多支持小数点后两位）、LocationID或Adcode（仅限中国城市）。例如 location=北京 或 location=116.41,39.92",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "type",
+                "param_desc": "OI类型，可选择搜索某一类型的POI:scenic 景点;CSTA 潮流站点;TSTA 潮汐站点",
+                "param_type": "string",
+                "param_required": "true"
+            },
+            {
+                "param_name": "radius",
+                "param_desc": "搜索范围，可设置搜索半径，取值范围1-50，单位：公里。默认5公里。",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "number",
+                "param_desc": "返回结果的数量，取值范围1-20，默认返回10个结果。",
+                "param_type": "string",
+                "param_required": "false"
+            },
+            {
+                "param_name": "lang",
+                "param_desc": "多语言，默认为简体中文zh",
+                "param_type": "string",
+                "param_required": "false"
+            }
+        ],
+        "api_query_example_desc": "北京市中心附近10公里景点",
+        "api_query_example": "curl -L -X GET --compressed 'https://geoapi.qweather.com/v2/poi/range?location=116.40528,39.90498&type=scenic&radius=10&key=YOUR_KEY'"
+    },
+    {
+        "api_alias": "日出日落",
+        "name": "SunriseSunset",
+        "api_endpoint": "https://api.qweather.com/v7/astronomy/sun?{查询参数}",
+        "api_auth": "api key",
+        "api_method": "GET",
+        "api_source": "QWeather",
+        "api_desc": "获取未来60天全球任意地点日出日落时间。",
+        "api_sub_type": "Astronomy"
+    },
+    {
+        "api_alias": "获取当前城市",
+        "name": "CurrentCity",
+        "api_endpoint": "",
+        "api_method": "GET",
+        "api_source": "",
+        "api_desc": "获取当前ip对应的城市",
+        "api_sub_type": ""
+    },
+    {
+        "api_alias": "获取汇率",
+        "name": "GetExchangeRates",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/meta/getExchangeRates",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "根据基础货币，提供一个货币汇率的列表",
+        "api_sub_type": "Meta",
+        "api_params": []
+    },
+    {
+        "api_alias": "地点经纬度搜索",
+        "name": "LocationtoLatLon",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/meta/locationToLatLong",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "根据地点名称，获取经纬度",
+        "api_sub_type": "Meta",
+        "api_params": []
+    },
+    {
+        "api_alias": "搜索酒店",
+        "name": "SearchHotels",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/hotels/searchHotels",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "根据地点搜索对应地点的酒店",
+        "api_sub_type": "Hotels",
+        "api_params": []
+    },
+    {
+        "api_alias": "获取酒店的详细信息",
+        "name": "GetHotelDetails",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/hotels/getHotelDetails",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "获取酒店的详细信息",
+        "api_sub_type": "Hotels",
+        "api_params": []
+    },
+    {
+        "api_alias": "获取酒店空房的信息",
+        "name": "GetHotelRoomAvailability",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/hotels/getAvailability",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "获取酒店在未来日子的空房信息",
+        "api_sub_type": "Hotels",
+        "api_params": []
+    },
+    {
+        "api_alias": "获取酒店的描述信息",
+        "name": "GetHotelDescriptionAndInfo",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/hotels/getDescriptionAndInfo",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "获取酒店的描述信息",
+        "api_sub_type": "Hotels",
+        "api_params": []
+    },
+    {
+        "api_alias": "获取酒店的评分",
+        "name": "GetHotelReviewScores",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/hotels/getHotelReviewScores",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "获取酒店的评分信息",
+        "api_sub_type": "Hotels",
+        "api_params": []
+    },
+    {
+        "api_alias": "搜索航班信息",
+        "name": "SearchFlights",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/flights/searchFlights",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "获取对应时间和机场的航班信息",
+        "api_sub_type": "Flights",
+        "api_params": []
+    },
+    {
+        "api_alias": "搜索最低价的航班信息",
+        "name": "GetMinFlightPrice",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/flights/getMinPrice",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "获取某段时间内最低的航班价格",
+        "api_sub_type": "Flights",
+        "api_params": []
+    },
+    {
+        "api_alias": "搜索某地点的旅行景点",
+        "name": "SearchAttractions",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/attraction/searchAttractions",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "搜索某地点的旅行景点",
+        "api_sub_type": "Attraction",
+        "api_params": []
+    },
+    {
+        "api_alias": "搜索某旅行景点的详细信息",
+        "name": "GetAttractionDetails",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/attraction/getAttractionDetails",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "搜索某旅行景点的详细信息",
+        "api_sub_type": "Attraction",
+        "api_params": []
+    },
+    {
+        "api_alias": "搜索航班地点的locationID",
+        "name": "SearchFlightDestination",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/flights/searchDestination",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "搜索某个地点的locationID，用于航班查询",
+        "api_sub_type": "Flights",
+        "api_params": []
+    },
+    {
+        "api_alias": "搜索酒店地点的locationID",
+        "name": "SearchHotelDestination",
+        "api_endpoint": "https://booking-com15.p.rapidapi.com/api/v1/hotels/searchDestination",
+        "api_method": "GET",
+        "api_source": "booking.com",
+        "api_source_url": "https://rapidapi.com/DataCrawler/api/booking-com15/",
+        "api_desc": "搜索某个地点的locationID，用于酒店查询",
+        "api_sub_type": "Hotels",
+        "api_params": []
+    }
+]

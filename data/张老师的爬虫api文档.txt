@@ -1,0 +1,349 @@
+1.	COVID19事件列表
+API名称：COVID_EventList
+请求方式：GET
+API地址： https://XXXX?sld-apikey=XXX&sld-cmd=COVID_EventList
+
+
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	urlParam	用于区分用户
+sld-cmd	String	是	urlParam	用于区分API
+调用示例：
+https://XXXX?sld-apikey=XXX&sld-cmd=COVID_EventList
+
+返回参数说明:
+参数名	类型	参数描述
+infoList	Array	数据列表
+id	String	事件id
+user	String	推特名
+title	String	事件名
+time	String	时间
+imgUrl	String	图片链接
+
+
+2.	COVID19事件列表详情及相关推文
+API名称：COVID_Detail
+请求方式：GET
+API地址： https://XXXX?XXXXX&XXX=COVID_Detail
+
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	urlParam	用于区分用户
+sld-cmd	String	是	urlParam	用于区分API
+id	String	是	urlParam	从COVID19事件列表接口获取的id参数
+
+
+返回参数说明:
+参数名	类型	参数描述
+user	String	推特名
+ID	String	ID
+time	String	时间
+title	String	事件名
+content	String	事件内容
+imgUrlList	array	图片列表
+videoUrl	String	视频链接
+infoList	Array	数据列表
+id	String	推文id
+user	String	推特名
+picImg	String	头像
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+forward	Object	转推内容
+id	String	推文id
+user	String	推特名
+picImg	String	头像
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+relation	Object	相关文章
+imgUrl	String	图片链接
+videoUrl	String	视频链接
+title	String	标题
+content	String	内容
+sourceUrl	String	原文链接
+
+
+2.COVID19详情相关推文评论列表
+API名称：COVID19CommentList
+请求方式：GET
+API地址： https://XXXX?sld-apikey=XXX&sld-cmd=COVID19CommentList
+
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	urlParam	用于区分用户
+sld-cmd	String	是	urlParam	用于区分API
+id	String	是	urlParam	从COVID19事件列表详情及相关推文接口获取的infoList列表的id参数
+cursor_bottom	String	否	urlParam	分页参数，由接口返回，当接口返回的该参数不为空时，表示可能有下一页
+
+
+返回参数说明:
+参数名	类型	参数描述
+cursor_bottom	String	分页参数，当接口返回的该参数不为空时，表示可能有下一页
+infoList	Array	数据列表
+user	String	推特名
+picImg	String	头像
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+forward	Object	转推内容
+user	String	推特名
+picImg	String	头像
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+relation	Object	相关文章
+imgUrl	String	图片链接
+videoUrl	String	视频链接
+title	String	标题
+content	String	内容
+sourceUrl	String	原文链接
+
+
+4.	新闻事件列表
+API名称：newsList
+请求方式：GET
+API地址： https://XXXX?sld-apikey=XXXXX&sld-cmd=newsList
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	urlParam	用于区分用户
+sld-cmd	String	是	urlParam	用于区分API
+
+返回参数说明:
+参数名	类型	参数描述
+infoList	Array	数据列表
+id	String	事件id
+user	String	推特名
+title	String	事件名
+time	String	时间
+imgUrl	String	图片链接
+
+5.	我和好友共同关注的列表
+API名称：followersYouKnowList
+请求方式：GET
+API地址： https://XXXXX?sld-apikey=XXXXX&sld-cmd=followersYouKnowList
+
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	urlParam	用于区分用户
+sld-cmd	String	是	urlParam	用于区分API
+userId	String	是	urlParam	好友用户id，从获取我关注的列表接口获取的userId参数
+cursor_bottom	String	否	urlParam	分页参数，由接口返回，当接口返回的该参数不为空时，表示可能有下一页
+
+
+返回参数说明:
+参数名	类型	参数描述
+cursor_bottom	String	分页参数，当接口返回的该参数不为空时，表示可能有下一页
+infoList	Array	数据列表
+userId	String	用户id
+user	String	推特名
+picUrl	String	头像链接
+ID	String	ID
+brief	String	简介
+
+
+6.	转发列表
+API名称：retweetList
+请求方式：GET
+API地址： https://XXXX?sld-apikey=XXXXX&sld-cmd=retweetList
+
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	urlParam	用于区分用户
+sld-cmd	String	是	urlParam	用于区分API
+id	String	是	urlParam	推文id，从关注的好友信息及相关推文接口获取的infoList列表中的id参数
+
+
+返回参数说明:
+参数名	类型	参数描述
+infoList	Array	数据列表
+userId	String	用户id
+user	String	推特名
+picUrl	String	头像链接
+ID	String	ID
+brief	String	简介
+
+
+7.	引用列表
+API名称：retweetList
+请求方式：GET
+API地址： https://XXXXX?sld-apikey=XXXXX&sld-cmd=quoteList
+
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	urlParam	用于区分用户
+sld-cmd	String	是	urlParam	用于区分API
+id	String	是	urlParam	推文id，从关注的好友信息及相关推文接口获取的infoList列表中的id参数
+
+返回参数说明:
+参数名	类型	参数描述
+infoList	Array	数据列表
+id	String	推文id
+user	String	推特名
+picImg	String	头像
+ID	String	ID
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+forward	Object	转推内容
+id	String	推文id
+user	String	推特名
+picImg	String	头像
+ID	String	ID
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+
+
+8.	高级搜索热门推文评论列表
+API名称：searchTopCommentList
+请求方式：GET
+API地址： https://XXXX?sld-apikey=XXXXX&sld-cmd=searchTopCommentList
+
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	urlParam	用于区分用户
+sld-cmd	String	是	urlParam	用于区分API
+id	String	是	urlParam	从高级搜索热门列表接口获取的infoList列表的id参数
+cursor_bottom	String	否	urlParam	分页参数，由接口返回，当接口返回的该参数不为空时，表示可能有下一页
+
+
+返回参数说明:
+参数名	类型	参数描述
+cursor_bottom	String	分页参数，当接口返回的该参数不为空时，表示可能有下一页
+infoList	Array	数据列表
+user	String	推特名
+picImg	String	头像
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+forward	Object	转推内容
+user	String	推特名
+picImg	String	头像
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+relation	Object	相关文章
+imgUrl	String	图片链接
+videoUrl	String	视频链接
+title	String	标题
+content	String	内容
+sourceUrl	String	原文链接
+
+9.	高级搜索热门列表
+API名称：searchTopList
+请求方式：POST
+API地址： https://XXXXX
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	body	用于区分用户
+sld-cmd	String	是	body	用于区分API
+allWords	String	否	body	搜索词（都包含），allWords、exactWord、 anyWords三者必须有一个不为空，即当exactWord、 anyWords两个参数为空时，该参数不能为空
+exactWords	String	否	body	搜索词（精确），allWords、exactWord、 anyWords三者必须有一个不为空，即当allWords、 anyWords两个参数为空时，该参数不能为空
+anyWords	String	否	body	搜索词（任何一词），allWords、exactWord、 anyWords三者必须有一个不为空，即当allWords、 exactWord两个参数为空时，该参数不能为空
+noneWords	String	否	body	搜索词（排除词）
+tags	String	否	body	标签
+language	String	否	body	语言，（ar：阿拉伯，bn：孟加拉语，eu：巴斯克，bg：保加利亚语，ca：加泰罗尼亚语，hr：克罗地亚语，cs：捷克语，da：丹麦文，nl：荷兰语，en：英语，fi：芬兰，fr：法文，de：德语，el：希腊语，gu：古吉拉特语，he：希伯来语，hi：印地语，hu：匈牙利，id：印度尼西亚语，it：意大利文，ja：日本语，kn：坎纳达语，ko：韩语，mr：马拉地语，no：挪威语，fa：波斯语，pl：波兰语，pt：葡萄牙语，ro：罗马尼亚语，ru：俄语，sr：塞尔维亚语，zh-cn：简体中文，sk：斯洛伐克文，es：西班牙文，sv：瑞典语，ta：泰米尔语，th：泰国语，zh-tw：繁体中文，tr：土耳其语，uk：乌克兰语，ur：乌尔都语，vi：越南文）例：ar(代表阿拉伯语)，不填默认任何语言
+fromAccounts	String	否	body	账号（来自）
+toAccounts	String	否	body	账号（发给）
+mentionAccounts	String	否	body	账号（提及）
+replies	String	否	body	过滤条件（回复），（0：包括回复和原始推文，1：仅显示回复，2：关闭回复过滤条件）
+links	String	否	body	过滤条件（链接），（0：在推文中包含链接，1：仅带有链接的推文，2：关闭链接过滤条件）
+minReplies	String	否	body	互动量（最少回复次数）
+minFaves	String	否	body	互动量（最少喜欢次数）
+minRetweets	String	否	body	互动量（最少转推次数）
+sinceDate	String	否	body	开始日期
+untilDate	String	否	body	结束日期
+cursor_bottom	String	否	body	分页参数，由接口返回，当接口返回的该参数不为空时，表示可能有下一页
+
+
+返回参数说明:
+参数名	类型	参数描述
+cursor_bottom	String	分页参数，当接口返回的该参数不为空时，表示可能有下一页
+infoList	Array	数据列表
+id	String	推文id
+user	String	推特名
+ID	String	ID
+picImg	String	头像
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+forward	Object	转推内容
+id	String	推文id
+user	String	推特名
+ID	String	ID
+picImg	String	头像
+createdTime	String	时间
+content	String	推文内容
+imgUrlList	Array	图片列表
+videoUrl	String	视频链接
+replyCount	String	评论数
+retweetCount	String	转推数
+favoriteCount	String	喜欢数
+
+10.	趋势列表
+API名称：trendingList
+请求方式：GET
+API地址： https://XXXX?sld-apikey=XXXX&sld-cmd=trendingList
+
+请求参数:
+
+参数名	类型	是否必填	参数位置	参数描述
+sld-apikey	String	是	urlParam	用于区分用户
+sld-cmd	String	是	urlParam	用于区分API
+
+
+返回参数说明:
+参数名	类型	参数描述
+infoList	Array	数据列表
+title	String	趋势名
+content	String	内容
+number	String	相关推文数
+id	String	详情id
+
+
